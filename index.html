@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Orbitron&display=swap" rel="stylesheet">
+    <title>Calcolatrice</title>
+  </head>
+  <body>
+    <main>
+      <div>
+        <h1>Calcolatrice</h1>
+        <div class="container">
+          <div class="btn" id="schermo">
+            <input id="display" readonly/>
+          </div>
+          <button type="button" class="btn" id="ptnz" onclick="potenza()">x<sup>2</sup></button>
+          <button type="button" class="btn" id="rad" onclick="radice()">&#8730;</button>
+          <button type="button" class="btn" id="delete" onclick="del()">&larr;</button>
+          <button type="button" class="btn" onclick="ins(7)">7</button>
+          <button type="button" class="btn" onclick="ins(8)">8</button>
+          <button type="button" class="btn" onclick="ins(9)">9</button>
+          <button type="button" class="btn btn2" id="divide" value="/" onclick="insDivide()">&divide;</button>
+          <button type="button" class="btn" onclick="ins(4)">4</button>
+          <button type="button" class="btn" onclick="ins(5)">5</button>
+          <button type="button" class="btn" onclick="ins(6)">6</button>
+          <button type="button" class="btn btn2" id="mult" value="*" onclick="insMult()">&times;</button>
+          <button type="button" class="btn" onclick="ins(1)">1</button>
+          <button type="button" class="btn" onclick="ins(2)">2</button>
+          <button type="button" class="btn" onclick="ins(3)">3</button>
+          <button type="button" class="btn btn2" id="minus" value="-" onclick="insMinus()">-</button>
+          <button type="button" class="btn" onclick="clearAll()">C</button>
+          <button type="button" class="btn" onclick="ins(0)">0</button>
+          <button type="button" class="btn" id="point" value= "." onclick="insPoint()">.</button>
+          <button type="button" class="btn btn2" id="plus" value="+" onclick="insPlus()">+</button>
+          <button
+            type="button"
+            class="btn"
+            id="uguale"
+            onclick="equal()"
+          >
+            =
+          </button>
+        </div>
+        <p id="cacca"></p>
+    </main>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
